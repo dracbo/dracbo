@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+	<head>
+		<link rel="icon" href="../img/meng-logo.png" />
+		<meta charset="utf-8" />
+		<title>我梦由我-website</title>
+	</head>
+	<style>
+		body {
+			background: url(../img/bg.jpg) repeat fixed center;
+			margin:0 20px 0;
+			padding: 0;
+		}
+		@keyframes logodh{
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+		@keyframes newsdh{
+			from {
+				transform: translateX(-300px);
+			}
+			to {
+				transform: translateX(0);
+			}
+		}
+		a {
+			text-decoration: none;
+		}
+		@font-face {
+		    font-family: 'D-DIN';
+		    src: url('../fonts/D-DIN.ttf');
+		}
+		.header {
+			z-index: 1;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100px;
+		}
+		.main {
+			width: 100%;
+			height: 3000px;
+		}
+		.main-up {
+			width: 100%;
+			height: 900px;
+		}
+		.main-down {
+			width: 100%;
+			height: 900px;
+		}
+		.nav {
+			margin-top: 15px;
+			height: 70px;
+		}
+		.menu {
+			width: 70px;
+			height: 70px;
+			float: right;
+			background: url(../img/menu.png);
+			background-size: 100%;
+		}
+		.logo {
+			width: 70%;
+			height: 700px;
+			margin: 0 auto;
+			background: url(../img/logo.png);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			transform: translateY(30px);
+			opacity: 0;
+			animation: logodh 8s forwards;
+		}
+		.SlideDown {
+			height: 100px;
+		}
+		.SlideDown-Photo {
+			width: 130px;
+			height: 100px;
+			margin: 0 auto;
+			background: url(../img/SlideDown.png);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			animation: logodh 5s forwards;
+			
+		}
+		.title {
+			height: 100px;
+			animation: newsdh 3s forwards;
+		}
+		.text {
+			width: 100%;
+			height: 50px;
+			
+		}
+		.text h1 {
+			margin: 0;
+			height: 50px;
+			line-height: 100px;
+			font-size: 45px;
+			font-family: 'D-DIN', sans-serif;
+		}
+		.text h1::first-letter {
+			color: #0065d1;
+		}
+		.menu-n h2 {
+			color: #fff;
+		}
+		.menu-n h2::first-letter {
+			color: #a60000;
+		}
+		.news-event {
+			padding: 15px 15px 15px;
+			margin-bottom: 20px;
+			border: 2px solid #a6bee5;
+			background: url(../img/newsbg.png);
+			background-size: 200%;
+			background-repeat: no-repeat;
+		}
+		.event {
+			text-align: center;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease;
+			width: 100%;
+			height: 100%;
+			border: 2px solid #004188;
+		}
+
+        .event-up {
+        }
+		.event-up p {
+			font-family: 'D-DIN', sans-serif;
+			
+		}
+        .event-box {
+            flex: 1;
+			padding-left: 10px;
+			padding-right: 10px;
+        }
+
+        .event-box1 {
+			padding-left: 10px;
+			padding-right: 10px;
+        }
+
+        @media (min-width: 600px) {
+            .event {
+                flex-direction: row;
+				height: calc(21vh - 20px);
+            }
+            .event-box {
+                height: 100%;
+            }
+            .event-box1 {
+                flex: 2;
+            }
+            .event-box2 {
+                flex: 4;
+            }
+        }
+		.titletime {
+			
+		}
+		.event-title {
+			height: 90px;
+		}
+		.event-time {
+			color: #222222;
+			transform: translateY(-40%);
+			height: 40px;
+		}
+		.event-hr {
+			height: 100%;
+			transform: translateY(0%);
+			border-left: 2px solid #740000;
+			border-right: 2px solid #740000;
+			border-top: 1px solid;
+		}
+		.event-hr p {
+			font-weight: 450;
+		}
+		.footer {
+			width: 100%;
+			height: 130px;
+			text-align: center;
+		}
+		.menu-box {
+		}
+		.menu-all {
+			margin-top: 160px;
+		}
+		.menu-n {
+			text-align: center;
+			width: 100%;
+			height: 70px;
+			color: #000;
+		}
+	</style>
+	<body>
+		<div id="#header"></div>
+		<div class="menu-style" id="menu-style"></div>
+		<div class="header">
+			<div class="nav" id="nav">
+				<div class="menu" onclick="menut()"></div>
+			</div>
+		</div>
+		<br />
+		<br />
+		<br />
+		<div class="menu-f">
+			<div class="menu-box" id="menu" onclick="">
+				
+			</div>
+		</div>
+		<div class="main">
+			<div class="main-up">
+				<div class="logo"></div>
+				<div class="SlideDown">
+					<a href="#text">
+						<div class="SlideDown-Photo"></div>
+					</a>
+				</div>
+			</div>
+			<div class="main-down">
+				<div class="title">
+					<div class="text" id="text">
+						<h1>動態</h1>
+					</div>
+				</div>
+            	<div class="news-event">
+					<div class="event">
+							<div class="event-box event-box1">
+								<div class="titletime">
+									<div class="event-title">
+										<h3>和平來之不易！</h3>
+									</div>
+									<div class="event-time">
+										<p>2024.9.18</p>
+									</div>	
+								</div>
+							</div>
+							<div class="event-box event-box2">
+								<div class="event-hr">
+									<p>今天，我們懷着沉重的心情，悼念918事件中遇難的同胞。歷史的教訓提醒我們，珍惜和平、追求正義是我們每個人的責任。願逝者安息，願未來的每一天都充滿希望與光明。</p>
+								</div>
+							</div>
+					</div>
+				</div>
+            	<div class="news-event">
+					<div class="event">
+							<div class="event-box event-box1">
+								<div class="titletime">
+									<div class="event-title">
+										<h3>《我夢由我》微電影劇本製作決定</h3>
+									</div>
+									<div class="event-time">
+										<p>2024.9.14</p>
+									</div>	
+								</div>
+							</div>
+							<div class="event-box event-box2">
+								<div class="event-hr">
+									<p>已構思出劇本大綱</p>
+								</div>
+							</div>
+					</div>
+				</div>
+				<div class="news-event">
+					<div class="event">
+							<div class="event-box event-box1">
+								<div class="titletime">
+									<div class="event-title">
+										<h3>《我夢由我》微電影製作方案決定</h3>
+									</div>
+									<div class="event-time">
+										<p>2024.9.5</p>
+									</div>	
+								</div>
+							</div>
+							<div class="event-box event-box2">
+								<div class="event-hr">
+									<p>方案設定中</p>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<p>&COPY;《我夢由我》微電影製作委員組</p>
+		</div>
+		<script src="./js/menu-zh-TW.js"></script>
+	</body>
+</html>
