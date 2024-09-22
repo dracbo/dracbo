@@ -164,7 +164,12 @@ a {
 .event-time {
 	color: #222222;
 	transform: translateY(-40%);
-	height: 40px;
+	height: 20px;
+	}
+.event-time-0 {
+	color: #222222;
+    transform: translateY(-140%);
+	height: 20px;
 	}
 .event-hr {
 	padding: 0 10px 10px;
