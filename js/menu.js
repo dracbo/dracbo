@@ -23,6 +23,16 @@
 				<h2>动态</h2>
 			</a>
 		</div>
+        <div class="menu-n">
+			<a href="#introduce" onclick="menuf()">
+				<h2>介绍</h2>
+			</a>
+		</div>
+        <div class="menu-n">
+			<a href="#characters" onclick="menuf()">
+				<h2>人物</h2>
+			</a>
+		</div>
 		<div class="menu-n">
 			<a href="#text" onclick="languages()">
 				<h2>语言</h2>
@@ -51,7 +61,7 @@
 	<div class="menu-all">
 		<div class="menu-n" onclick="menuf()">
 			<a href="#header">
-				<h2 style="font-weight: 500; font-size: 24px;">首页</h2>
+				<h2>首页</h2>
 			</a>
 		</div>
 		<div class="menu-n">
@@ -61,7 +71,7 @@
 		</div>
 		<div class="menu-n">
 			<a href="index.html">
-				<h2 style="font-weight: 500; font-size: 24px;" lang="zh-CN">中文简体</h2>
+				<h2 lang="zh-CN">中文简体</h2>
 			</a>
 		</div>
 		<div class="menu-n">
