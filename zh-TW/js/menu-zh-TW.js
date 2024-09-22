@@ -23,6 +23,16 @@
 				<h2>動態</h2>
 			</a>
 		</div>
+        <div class="menu-n">
+			<a href="#introduce" onclick="menuf()">
+				<h2>介紹</h2>
+			</a>
+		</div>
+        <div class="menu-n">
+			<a href="#characters" onclick="menuf()">
+				<h2>角色</h2>
+			</a>
+		</div>
 		<div class="menu-n">
 			<a href="#text" onclick="languages()">
 				<h2>語言</h2>
