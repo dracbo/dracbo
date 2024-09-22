@@ -23,6 +23,16 @@
 				<h2>NEWS</h2>
 			</a>
 		</div>
+        <div class="menu-n">
+			<a href="#introduce" onclick="menuf()">
+				<h2>SYNOPSIS</h2>
+			</a>
+		</div>
+        <div class="menu-n">
+			<a href="#characters" onclick="menuf()">
+				<h2>CHARACTERS</h2>
+			</a>
+		</div>
 		<div class="menu-n">
 			<a href="#text" onclick="languages()">
 				<h2>LANGUAGE</h2>
@@ -61,7 +71,7 @@
 		</div>
 		<div class="menu-n">
 			<a href="../index.html">
-				<h2 style="font-weight: 500; font-size: 24px;" lang="zh-CN">中文简体</h2>
+				<h2 lang="zh-CN">中文简体</h2>
 			</a>
 		</div>
 		<div class="menu-n">
