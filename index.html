@@ -2,209 +2,12 @@
 <html lang="zh-CN">
 	<head>
 		<link rel="icon" href="./img/meng-logo.png" />
+        <link rel="stylesheet" type="text/css" href="./css/index.css">
 	        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<title>我梦由我-website</title>
+		<title>我梦由我</title>
 	</head>
-	<style>
-		body {
-			background: url(./img/bg.jpg) repeat fixed center;
-			margin:0 20px 0;
-			padding: 0;
-		}
-		@keyframes logodh{
-			from {
-				opacity: 0;
-			}
-			to {
-				opacity: 1;
-			}
-		}
-		@keyframes newsdh{
-			from {
-				transform: translateX(-300px);
-			}
-			to {
-				transform: translateX(0);
-			}
-		}
-		a {
-			text-decoration: none;
-		}
-		@font-face {
-		    font-family: 'D-DIN';
-		    src: url('fonts/D-DIN.ttf');
-		}
-		.header {
-			z-index: 1;
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100px;
-		}
-		.main {
-			width: 100%;
-			height: 3000px;
-		}
-		.main-up {
-			width: 100%;
-			height: 900px;
-		}
-		.main-down {
-			width: 100%;
-			height: 900px;
-		}
-		.nav {
-			margin-top: 15px;
-			height: 70px;
-		}
-		.menu {
-			width: 70px;
-			height: 70px;
-			float: right;
-			background: url(./img/menu.png);
-			background-size: 100%;
-		}
-		.logo {
-			width: 70%;
-			height: 700px;
-			margin: 0 auto;
-			background: url(./img/logo.png);
-			background-size: 100%;
-			background-repeat: no-repeat;
-			transform: translateY(30px);
-			opacity: 0;
-			animation: logodh 8s forwards;
-		}
-		.SlideDown {
-			height: 100px;
-		}
-		.SlideDown-Photo {
-			width: 130px;
-			height: 100px;
-			margin: 0 auto;
-			background: url(./img/SlideDown.png);
-			background-size: 100%;
-			background-repeat: no-repeat;
-			animation: logodh 5s forwards;
-			
-		}
-		.title {
-			height: 100px;
-			animation: newsdh 3s forwards;
-		}
-		.text {
-			width: 100%;
-			height: 50px;
-			
-		}
-		.text h1 {
-			margin: 0;
-			height: 50px;
-			line-height: 100px;
-			font-size: 45px;
-			font-family: 'D-DIN', sans-serif;
-		}
-		.text h1::first-letter {
-			color: #0065d1;
-		}
-		.menu-n h2 {
-			color: #fff;
-		}
-		.menu-n h2::first-letter {
-			color: #a60000;
-		}
-		.news-event {
-			padding: 15px 15px 15px;
-			margin-bottom: 20px;
-			border: 2px solid #a6bee5;
-			background: url(img/newsbg.png);
-			background-size: 200%;
-			background-repeat: no-repeat;
-		}
-		.event {
-			text-align: center;
-            display: flex;
-            flex-direction: column;
-            transition: all 0.3s ease;
-			width: 100%;
-			height: 100%;
-			border: 2px solid #004188;
-		}
-
-        .event-up {
-        }
-		.event-up p {
-			font-family: 'D-DIN', sans-serif;
-			
-		}
-        .event-box {
-            flex: 1;
-			padding-left: 10px;
-			padding-right: 10px;
-        }
-
-        .event-box1 {
-			padding-left: 10px;
-			padding-right: 10px;
-        }
-
-        @media (min-width: 600px) {
-            .event {
-                flex-direction: row;
-				height: calc(21vh - 20px);
-            }
-            .event-box {
-                height: 100%;
-            }
-            .event-box1 {
-                flex: 2;
-            }
-            .event-box2 {
-                flex: 4;
-            }
-        }
-		.titletime {
-			
-		}
-		.event-title {
-			height: 90px;
-		}
-		.event-time {
-			color: #222222;
-			transform: translateY(-40%);
-			height: 40px;
-		}
-		.event-hr {
-			padding: 0 10px 0;
-			height: 100%;
-			transform: translateY(0%);
-			border-left: 2px solid #740000;
-			border-right: 2px solid #740000;
-			border-top: 1px solid;
-		}
-		.event-hr p {
-			font-weight: 450;
-		}
-		.footer {
-			width: 100%;
-			height: 130px;
-			text-align: center;
-		}
-		.menu-box {
-		}
-		.menu-all {
-			margin-top: 160px;
-		}
-		.menu-n {
-			text-align: center;
-			width: 100%;
-			height: 70px;
-			color: #000;
-		}
-	</style>
 	<body>
-		<div id="#header"></div>
+    	<div id="header"></div>
 		<div class="menu-style" id="menu-style"></div>
 		<div class="header">
 			<div class="nav" id="nav">
@@ -292,7 +95,118 @@
 					</div>
 				</div>
 			</div>
+            
+            
+            
+            <div class="main-down">
+				<div class="title">
+					<div class="text" id="introduce">
+						<h1>介绍</h1>
+					</div>
+				</div>
+            	<div class="news-event">
+					<div class="event">
+							<div class="event-box event-box1">
+								<div class="titletime">
+									<div class="event-title">
+										<h3>《我梦由我》微电影介绍</h3>
+									</div>
+									<div class="event-time">
+										<p>《我梦由我》制作组</p>
+									</div>	
+								</div>
+							</div>
+							<div class="event-box event-box2">
+								<div class="event-hr">
+									<p>《我梦由我》是一部围绕梦想为主题的微电影，讲述了一名热爱摄影、充满激情、努力追求自己的梦想的少年，坚定地相信追梦的意义，在追逐梦想的过程中，他带领同学为热爱而奔跑，为自我证明而奋斗，最终力求完成属于自己的梦想之作！梦想一词不可笑，可笑的是止用口言者。</p>
+								</div>
+							</div>
+					</div>
+				</div>
+                
+			</div>
+                        
+            
+            <div class="main-down">
+				<div class="title">
+					<div class="text" id="characters">
+						<h1>人物</h1>
+					</div>
+				</div>
+            	<div class="news-event">
+					<div class="event">
+							<div class="event-box event-box1">
+								<div class="titletime">
+									<div class="event-title">
+										<h3>李梦</h3>
+									</div>
+									<div class="event-time-0">
+										<p>角色：主角</p>
+									</div>
+                        			<div class="event-time-0">
+										<p>性别：男性</p>
+									</div>
+								</div>
+							</div>
+							<div class="event-box event-box2">
+								<div class="event-hr">
+									<p>热爱摄影、勇于做自我的一名追梦少年，和朋友们一起共同完成校园之作，虽过程中困难重重但依然迎难而上！</p>
+								</div>
+							</div>
+					</div>
+				</div>
+                <div class="news-event">
+					<div class="event">
+							<div class="event-box event-box1">
+								<div class="titletime">
+									<div class="event-title">
+										<h3>程浩</h3>
+									</div>
+									<div class="event-time-0">
+										<p>角色：主角</p>
+									</div>
+                        			<div class="event-time-0">
+										<p>性别：男性</p>
+									</div>
+								</div>
+							</div>
+							<div class="event-box event-box2">
+								<div class="event-hr">
+									<p>没啥梦想，是条咸鱼</p>
+								</div>
+							</div>
+					</div>
+				</div>
+                <div class="news-event">
+					<div class="event">
+							<div class="event-box event-box1">
+								<div class="titletime">
+									<div class="event-title">
+										<h3>王博</h3>
+									</div>
+									<div class="event-time-0">
+										<p>角色：主角</p>
+									</div>
+                        			<div class="event-time-0">
+										<p>性别：男性</p>
+									</div>
+								</div>
+							</div>
+							<div class="event-box event-box2">
+								<div class="event-hr">
+									<p>外号博哥，没啥梦想，是条咸鱼</p>
+								</div>
+							</div>
+					</div>
+				</div>
+                
+			</div>
+            
+            <br />
 		</div>
+        
+        
+        
 		<div class="footer">
 			<p>&COPY;《我梦由我》微电影制作委员组</p>
 		</div>
